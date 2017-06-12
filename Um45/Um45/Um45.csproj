@@ -40,6 +40,8 @@
     </Compile>
     <Compile Include="Code\Json.cs" />
     <Compile Include="Controls\Behaviors\BehaviorBase.cs" />
+    <Compile Include="Controls\Behaviors\MinLengthBehavior.cs" />
+    <Compile Include="Controls\Behaviors\EmailValidatorBehavior.cs" />
     <Compile Include="Controls\Behaviors\EventToCommandBehavior.cs" />
     <Compile Include="Controls\Behaviors\EntryEnterKeyBehavior.cs" />
     <Compile Include="Controls\Converters\SelectedItemEventArgsToSelectedItemConverter.cs" />

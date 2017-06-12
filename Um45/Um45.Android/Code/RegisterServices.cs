@@ -9,7 +9,8 @@ namespace Um45.Droid.Code
         {
             
             if (!SimpleIoc.Default.IsRegistered<ILogger>())
-                SimpleIoc.Default.Register<ILogger>(() => new Um45.Droid.Services.Logger());
+                SimpleIoc.Default.Register<ILogger>(() => 
+                new Um45.Droid.Services.Logger());
 
          
         }

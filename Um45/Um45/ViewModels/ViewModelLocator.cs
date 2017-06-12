@@ -10,16 +10,10 @@ namespace Um45.ViewModels
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
             SimpleIoc.Default.Register<HomeViewModel>();
             SimpleIoc.Default.Register<DetailsViewModel>();
-
-
-
-        }
-        //public HomeMenu HomeMenu => ServiceLocator.Current.GetInstance<HomeMenu>();
-
+       }
+     
         public HomeViewModel Home => ServiceLocator.Current.GetInstance<HomeViewModel>();
 
         public DetailsViewModel Details => ServiceLocator.Current.GetInstance<DetailsViewModel>();
-
-
     }
 }

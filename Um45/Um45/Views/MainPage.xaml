@@ -26,7 +26,15 @@
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Entry  Margin="10" HorizontalOptions="FillAndExpand" BackgroundColor="White" 
-                    Text="{Binding SearchQuery, Mode=TwoWay}"></Entry>
+                    Text="{Binding SearchQuery, Mode=TwoWay}">
+                <Entry.Behaviors>
+                    <behaviors:MinLengthBehavior >
+
+                    </behaviors:MinLengthBehavior>
+               
+                </Entry.Behaviors>
+
+            </Entry>
             <Button Grid.Column="1" Text="Search" 
                     Command="{Binding DoSearch}"></Button>
         </Grid>
